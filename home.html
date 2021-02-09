@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="">
+      <!-- Topbar -->
+      <div
+        id="nav"
+        class="w-full h-12 bg-blue-400 px-2 flex flex-row items-center"
+      >
+        <img
+          id="menu"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/30px-Hamburger_icon_white.svg.png"
+          alt=""
+          class="cursor-pointer"
+        />
+        <h3 class="text-lg text-white font-bold ml-4">John Doe</h3>
+      </div>
+      <div id="nav-mobile" class="hidden">
+        <div class="w-4/5 h-full bg-gray-50 flex flex-col p-4">
+          <div class="flex flex-col">
+            <img
+              src="https://randomuser.me/api/portraits/men/3.jpg"
+              alt=""
+              class="w-32 rounded-full shadow self-center"
+            />
+            <h2 class="mt-4 text-gray-900 text-2xl text-center font-extrabold">
+              John Doe
+            </h2>
+          </div>
+          <ul class="mt-4">
+            <li class="text-xl mt-2 font-bold text-gray-900">
+              🏠&nbsp;&nbsp;&nbsp;Home
+            </li>
+            <li class="text-xl mt-2 font-bold text-gray-900">
+              👥&nbsp;&nbsp;&nbsp;Connections
+            </li>
+            <li class="text-xl mt-2 font-bold text-gray-900">
+              🔥&nbsp;&nbsp;&nbsp;Trending
+            </li>
+            <li class="text-xl mt-2 font-bold text-gray-900">
+              ℹ️&nbsp;&nbsp;&nbsp;About
+            </li>
+          </ul>
+        </div>
+        <div id="nav-mobile-right" class="w-1/5 h-full bg-transparent"></div>
+      </div>
+      <!-- Search -->
+      <div class="w-full flex flex-col mt-2 p-2">
+        <input
+          type="text"
+          placeholder="Search"
+          class="bg-gray-100 rounded-md font-light p-2"
+        />
+      </div>
+      <!-- Stories View -->
+      <div
+        id="stories-container"
+        class="w-full flex flex-no-wrap overflow-auto mt-2 p-2"
+      ></div>
+      <!-- Content -->
+      <div id="content" class="flex flex-col lg:flex-row">
+        <div
+          id="content-container-left"
+          class="w-full lg:w-2/3 flex flex-col items-center px-2 pb-4"
+        ></div>
+        <div id="content-container-right" class="flex-1 p-4">
+          <div class="">
+            <h3 class="text-2xl font-bold mb-2">
+              🛠&nbsp;&nbsp;Technologies
+            </h3>
+            <hr />
+            <ul id="technologies-list" class="block my-2"></ul>
+          </div>
+          <div class="mt-8">
+            <h3 class="text-2xl font-bold mb-2">
+              🔥&nbsp;&nbsp;Trending Projects
+            </h3>
+            <hr />
+            <ul class="my-4">
+              <li
+                class="mt-2 text-lg font-light flex flex-row items-center cursor-pointer hover:text-gray-600"
+              >
+                <img
+                  src="https://avatars.githubusercontent.com/u/43666833?s=460&u=fe6fee5a03def4ffd5a7c587032c57b15713f51b&v=4"
+                  alt=""
+                  class="h-8 rounded-full mr-2"
+                />
+                akulsr0/crypto-bot
+              </li>
+              <li
+                class="mt-2 text-lg font-light flex flex-row items-center cursor-pointer hover:text-gray-600"
+              >
+                <img
+                  src="https://thumbs.dreamstime.com/b/default-avatar-profile-trendy-style-social-media-user-icon-187599373.jpg"
+                  alt=""
+                  class="h-8 rounded-full mr-2"
+                />
+                hrishabh-22/dice_roller
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8">
+            <h3 class="text-2xl font-bold mb-2">
+              🔥&nbsp;&nbsp;Trending Users
+            </h3>
+            <hr />
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>
